@@ -1,2 +1,2 @@
 # TibetanCalligraphyVRapp
-Sharing code related to my Tibetan Calligraphy VR App project for the Oculus Quest
+Sharing code related to Tibetan Calligraphy VR App project for the Meta Quest 2 and 3
