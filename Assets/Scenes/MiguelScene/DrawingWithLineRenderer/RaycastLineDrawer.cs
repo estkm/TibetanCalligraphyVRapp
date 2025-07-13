@@ -8,7 +8,7 @@ public class RaycastLineDrawer : MonoBehaviour
     [SerializeField] private Transform drawingPointer;
     [SerializeField] private Transform boardContainer;
     [SerializeField] private float rayDistance = 0.05f;
-    [SerializeField] private LayerMask drawLayerMask; // Asigna la layer de la pizarra
+    [SerializeField] private LayerMask drawLayerMask;
     [SerializeField] private Transform lineRedererPrefab;
 
     private Vector3 _drawPoint;
@@ -59,7 +59,13 @@ public class RaycastLineDrawer : MonoBehaviour
             }
 
             _currentLineRenderer.positionCount = ++_vertexCount;
+            _drawPoint.z -= 0.002f;
             _currentLineRenderer.SetPosition(_vertexCount - 1, _drawPoint);
+            
+            /*Material mat = _currentLineRenderer.material;
+            mat.SetInt("_ZWrite", 0);
+            mat.renderQueue = 3100;
+            _currentLineRenderer.material = mat;*/
         }
         else
         {
@@ -78,4 +84,5 @@ public class RaycastLineDrawer : MonoBehaviour
             Gizmos.DrawLine(origin, origin + direction);
         }
     }
+    
 }
