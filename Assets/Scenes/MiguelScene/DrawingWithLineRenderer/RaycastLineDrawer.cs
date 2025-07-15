@@ -37,22 +37,14 @@ public class RaycastLineDrawer : MonoBehaviour
             {
                 _isDrawing = true;
 
-                if (_recognized)
-                {
-                    _recognized = false;
-                    _strokeId = -1;
-
-                    foreach (var lineRenderer in _linesRenderer)
-                    {
-                        Destroy(lineRenderer.gameObject);
-                    }
-                    _linesRenderer.Clear();
-                }
-
+                
                 ++_strokeId;
 
                 Transform tempGO = Instantiate(lineRedererPrefab, Vector3.zero, Quaternion.identity);
                 tempGO.SetParent(boardContainer);
+                boardContainer.rotation = Quaternion.Euler(90, 0, 0);
+                tempGO.SetParent(boardContainer.parent);
+                boardContainer.rotation = Quaternion.identity;
                 _currentLineRenderer = tempGO.GetComponent<LineRenderer>();
                 _linesRenderer.Add(_currentLineRenderer);
                 _vertexCount = 0;
@@ -62,10 +54,6 @@ public class RaycastLineDrawer : MonoBehaviour
             _drawPoint.z -= 0.002f;
             _currentLineRenderer.SetPosition(_vertexCount - 1, _drawPoint);
             
-            /*Material mat = _currentLineRenderer.material;
-            mat.SetInt("_ZWrite", 0);
-            mat.renderQueue = 3100;
-            _currentLineRenderer.material = mat;*/
         }
         else
         {
