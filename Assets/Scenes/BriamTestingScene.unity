@@ -235,6 +235,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5161989964646342875, guid: c18c2334d0f5bb94cbb090401535d577, type: 3}
   m_PrefabInstance: {fileID: 8312469332701707593}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &50938601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1639583175655568251, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+  m_PrefabInstance: {fileID: 3092459991016277337}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2dc217fc0284dcdb26fd6f9b3494b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCManager
 --- !u!1 &73808061
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,7 +2507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.436
+      value: 0.881
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2504,11 +2515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.826
+      value: 1.435
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.17364825
+      value: 0.93967545
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2516,7 +2527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9848078
+      value: 0.34206745
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2528,7 +2539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 40.006
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -16756,6 +16767,71 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+--- !u!1001 &3092459991016277337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1639583175655568251, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: states.Array.data[1].name
+      value: greeting
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639583175655568251, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: states.Array.data[2].name
+      value: walking
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337197680993917890, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.262
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337197680993917890, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337197680993917890, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.231
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337197680993917890, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.19640504
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337197680993917890, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337197680993917890, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9805229
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337197680993917890, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337197680993917890, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337197680993917890, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -157.346
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337197680993917890, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371407554156387134, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
+      propertyPath: m_Name
+      value: GirlNPC
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9a1c8daa1bf51f4f8c93cdae034e524, type: 3}
 --- !u!1001 &3257631069116033653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17263,6 +17339,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 50938601}
+        m_TargetAssemblyTypeName: NPCManager, Assembly-CSharp
+        m_MethodName: GoToState
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: greeting
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &3409566789716954866
@@ -17889,3 +17977,4 @@ SceneRoots:
   - {fileID: 1565887663878291441}
   - {fileID: 1703568386}
   - {fileID: 610590593}
+  - {fileID: 3092459991016277337}
