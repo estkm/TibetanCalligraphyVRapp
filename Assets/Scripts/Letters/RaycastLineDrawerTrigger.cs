@@ -1,25 +1,26 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class RaycastLineDrawer : MonoBehaviour
+public class RaycastLineDrawerTrigger : MonoBehaviour
 {
     [SerializeField] private Transform drawingPointer;
     [SerializeField] private Transform boardContainer;
     [SerializeField] private float rayDistance = 0.05f;
     [SerializeField] private LayerMask drawLayerMask;
-    [SerializeField] private Transform lineRedererPrefab;
+    [SerializeField] private Transform lineRendererPrefab;
 
     private Vector3 _drawPoint;
     private bool _isDrawing = false;
-    private bool _recognized = false;
 
     private int _strokeId = -1;
     private int _vertexCount = 0;
 
     private List<LineRenderer> _linesRenderer = new List<LineRenderer>();
     private LineRenderer _currentLineRenderer;
+
+    // 🔥 Evento que se dispara cuando se termina un trazo
+    public Action OnStrokeFinished;
 
     private void Update()
     {
@@ -36,15 +37,14 @@ public class RaycastLineDrawer : MonoBehaviour
             if (!_isDrawing)
             {
                 _isDrawing = true;
-
-                
                 ++_strokeId;
 
-                Transform tempGO = Instantiate(lineRedererPrefab, Vector3.zero, Quaternion.identity);
+                Transform tempGO = Instantiate(lineRendererPrefab, Vector3.zero, Quaternion.identity);
                 tempGO.SetParent(boardContainer);
                 boardContainer.rotation = Quaternion.Euler(90, 0, 0);
                 tempGO.SetParent(boardContainer.parent);
                 boardContainer.rotation = Quaternion.identity;
+
                 _currentLineRenderer = tempGO.GetComponent<LineRenderer>();
                 _linesRenderer.Add(_currentLineRenderer);
                 _vertexCount = 0;
@@ -53,14 +53,18 @@ public class RaycastLineDrawer : MonoBehaviour
             _currentLineRenderer.positionCount = ++_vertexCount;
             _drawPoint.z -= 0.002f;
             _currentLineRenderer.SetPosition(_vertexCount - 1, _drawPoint);
-            
         }
         else
         {
-            _isDrawing = false;
+            // 🔥 Si estaba dibujando y ahora ya no, significa que terminó el trazo
+            if (_isDrawing)
+            {
+                _isDrawing = false;
+                OnStrokeFinished?.Invoke(); // Disparamos evento
+            }
         }
     }
-    
+
     private void OnDrawGizmos()
     {
         if (drawingPointer != null)
@@ -72,5 +76,4 @@ public class RaycastLineDrawer : MonoBehaviour
             Gizmos.DrawLine(origin, origin + direction);
         }
     }
-    
 }

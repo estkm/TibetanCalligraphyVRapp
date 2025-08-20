@@ -6,13 +6,16 @@ public class LetterGameManager : MonoBehaviour
 {
     public static LetterGameManager Instance;
 
-    [Header("Letters Setup (set manually in Inspector)")]
-    [Tooltip("Add each Letter manually in the correct order")]
+    [Header("Letters Setup")]
     public List<Letter> letters = new List<Letter>();
 
     [Header("Settings")]
     public float delayBetweenStrokes = 5f;
     public float delayBetweenLetters = 5f;
+
+    [Header("References")]
+    [Tooltip("Arrastra aquí el RaycastLineDrawerTrigger")]
+    public RaycastLineDrawerTrigger lineDrawer;
 
     private int _currentLetterIndex = -1;
     private int _currentStrokeIndex = -1;
@@ -24,57 +27,72 @@ public class LetterGameManager : MonoBehaviour
 
     private void Start()
     {
-        // Hide all letters at the start
+        // Suscribirse al evento del drawer
+        if (lineDrawer != null)
+            lineDrawer.OnStrokeFinished += HandleStrokeFinished;
+
+        // Ocultar todo al inicio
         foreach (var letter in letters)
         {
             if (letter != null)
                 letter.HideAllStrokes();
         }
 
-        ShowNextLetter(); // Start with the first letter
+        ShowNextLetter(); // Arrancamos con la primera letra
     }
 
     private void ShowNextLetter()
     {
+        if (_currentLetterIndex > -1){
+            Letter lastLetter = letters[_currentLetterIndex];
+            lastLetter.gameObject.SetActive(false);
+        }
         _currentLetterIndex++;
         _currentStrokeIndex = -1;
 
         if (_currentLetterIndex < letters.Count)
         {
-            ShowNextStroke(); // Start with first stroke of this letter
+            ShowNextStroke();
         }
         else
         {
-            Debug.Log("✅ All letters completed!");
+            Debug.Log("✅ Todas las letras completadas!");
         }
     }
 
     private void ShowNextStroke()
     {
+
         _currentStrokeIndex++;
+        
 
         Letter currentLetter = letters[_currentLetterIndex];
-
+        currentLetter.gameObject.SetActive(true);
         if (_currentStrokeIndex < currentLetter.StrokeCount)
         {
             Stroke stroke = currentLetter.GetStroke(_currentStrokeIndex);
-            stroke.ShowGuideAndEmpty(); // Show guide + empty together
+            stroke.ShowGuideAndEmpty();
         }
         else
         {
-            // Finished all strokes in this letter
             StartCoroutine(ShowNextLetterDelayed());
         }
     }
 
-    // Called by RaycastLineDrawer when a stroke is completed
+    private void HandleStrokeFinished()
+    {
+        Letter currentLetter = letters[_currentLetterIndex];
+        Stroke currentStroke = currentLetter.GetStroke(_currentStrokeIndex);
+
+        OnStrokeCompleted(currentStroke);
+    }
+
+    // 🔥 llamado cuando un stroke se completa
     public void OnStrokeCompleted(Stroke stroke)
     {
-        // Hide Guide + Empty and show Filled
         stroke.HideGuideAndEmpty();
         stroke.ShowFilled();
 
-        // Wait before showing the next stroke
         StartCoroutine(ShowNextStrokeDelayed());
     }
 
