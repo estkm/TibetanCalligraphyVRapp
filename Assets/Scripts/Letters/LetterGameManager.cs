@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,9 +11,11 @@ public class LetterGameManager : MonoBehaviour
     public List<Letter> letters = new List<Letter>();
 
     [Header("Settings")]
-    public float delayBetweenLetters = 2f;
+    public float delayBetweenStrokes = 5f;
+    public float delayBetweenLetters = 5f;
 
     private int _currentLetterIndex = -1;
+    private int _currentStrokeIndex = -1;
 
     private void Awake()
     {
@@ -27,7 +28,7 @@ public class LetterGameManager : MonoBehaviour
         foreach (var letter in letters)
         {
             if (letter != null)
-                letter.HideAll();
+                letter.HideAllStrokes();
         }
 
         ShowNextLetter(); // Start with the first letter
@@ -36,11 +37,11 @@ public class LetterGameManager : MonoBehaviour
     private void ShowNextLetter()
     {
         _currentLetterIndex++;
+        _currentStrokeIndex = -1;
 
         if (_currentLetterIndex < letters.Count)
         {
-            Letter currentLetter = letters[_currentLetterIndex];
-            currentLetter.StartDrawing(); // let the letter handle its strokes
+            ShowNextStroke(); // Start with first stroke of this letter
         }
         else
         {
@@ -48,10 +49,39 @@ public class LetterGameManager : MonoBehaviour
         }
     }
 
-    public void OnLetterCompleted(Letter letter)
+    private void ShowNextStroke()
     {
-        // Wait before showing the next letter
-        StartCoroutine(ShowNextLetterDelayed());
+        _currentStrokeIndex++;
+
+        Letter currentLetter = letters[_currentLetterIndex];
+
+        if (_currentStrokeIndex < currentLetter.StrokeCount)
+        {
+            Stroke stroke = currentLetter.GetStroke(_currentStrokeIndex);
+            stroke.ShowGuideAndEmpty(); // Show guide + empty together
+        }
+        else
+        {
+            // Finished all strokes in this letter
+            StartCoroutine(ShowNextLetterDelayed());
+        }
+    }
+
+    // Called by RaycastLineDrawer when a stroke is completed
+    public void OnStrokeCompleted(Stroke stroke)
+    {
+        // Hide Guide + Empty and show Filled
+        stroke.HideGuideAndEmpty();
+        stroke.ShowFilled();
+
+        // Wait before showing the next stroke
+        StartCoroutine(ShowNextStrokeDelayed());
+    }
+
+    private IEnumerator ShowNextStrokeDelayed()
+    {
+        yield return new WaitForSeconds(delayBetweenStrokes);
+        ShowNextStroke();
     }
 
     private IEnumerator ShowNextLetterDelayed()
