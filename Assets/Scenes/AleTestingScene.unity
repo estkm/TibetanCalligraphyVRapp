@@ -2594,17 +2594,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5826856039808071700, guid: 9574be715201c244d9417ca1baa287da, type: 3}
   m_PrefabInstance: {fileID: 559014222}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &559014224 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5507189130826164060, guid: 9574be715201c244d9417ca1baa287da, type: 3}
-  m_PrefabInstance: {fileID: 559014222}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6516091feb98aae4fa3bc963dc6693aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Letter
 --- !u!1001 &567988463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5664,17 +5653,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5826856039808071700, guid: 9574be715201c244d9417ca1baa287da, type: 3}
   m_PrefabInstance: {fileID: 1105253909}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1105253911 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5507189130826164060, guid: 9574be715201c244d9417ca1baa287da, type: 3}
-  m_PrefabInstance: {fileID: 1105253909}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6516091feb98aae4fa3bc963dc6693aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Letter
 --- !u!1 &1126458820
 GameObject:
   m_ObjectHideFlags: 0
@@ -5708,6 +5686,7 @@ Transform:
   - {fileID: 1164435413}
   - {fileID: 242105518}
   - {fileID: 1624919549}
+  - {fileID: 1222227204}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1136333776
@@ -6344,7 +6323,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1126458821}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1222227205
 MonoBehaviour:
@@ -6358,12 +6337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02d63cdf48e9a642abc6c4524def339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LetterGameManager
-  letters:
-  - {fileID: 1105253911}
-  - {fileID: 559014224}
-  - {fileID: 1496585538}
-  guideTime: 5
-  nextLetterDelay: 5
+  strokes: []
+  delayBetweenStrokes: 5
 --- !u!1 &1225517152
 GameObject:
   m_ObjectHideFlags: 0
@@ -8103,17 +8078,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5826856039808071700, guid: 9574be715201c244d9417ca1baa287da, type: 3}
   m_PrefabInstance: {fileID: 1496585536}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1496585538 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5507189130826164060, guid: 9574be715201c244d9417ca1baa287da, type: 3}
-  m_PrefabInstance: {fileID: 1496585536}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6516091feb98aae4fa3bc963dc6693aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Letter
 --- !u!1 &1505275897
 GameObject:
   m_ObjectHideFlags: 0
@@ -12889,7 +12853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7958129432503431230, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 3858759680
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7958129432503431230, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -14500,5 +14464,4 @@ SceneRoots:
   - {fileID: 8639024293885732554}
   - {fileID: 1194318113}
   - {fileID: 1126458821}
-  - {fileID: 1222227204}
   - {fileID: 979814817}

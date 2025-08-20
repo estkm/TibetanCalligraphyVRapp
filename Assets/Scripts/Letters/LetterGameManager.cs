@@ -1,74 +1,62 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LetterGameManager : MonoBehaviour
 {
-    [SerializeField] private List<Letter> letters;
-    [SerializeField] private float guideTime = 5f;
-    [SerializeField] private float nextLetterDelay = 5f;
+    public static LetterGameManager Instance;
 
-    private int _currentLetterIndex = 0;
-    private int _currentStrokeIndex = 0;
+    [Header("Letters Setup (set manually in Inspector)")]
+    [Tooltip("Add each Letter manually in the correct order")]
+    public List<Letter> letters = new List<Letter>();
 
-    private RaycastLineDrawer drawer;
+    [Header("Settings")]
+    public float delayBetweenLetters = 2f;
+
+    private int _currentLetterIndex = -1;
 
     private void Awake()
     {
-        drawer = FindObjectOfType<RaycastLineDrawer>();
+        Instance = this;
     }
 
     private void Start()
     {
-        StartCoroutine(RunFlow());
+        // Hide all letters at the start
+        foreach (var letter in letters)
+        {
+            if (letter != null)
+                letter.HideAll();
+        }
+
+        ShowNextLetter(); // Start with the first letter
     }
 
-    private IEnumerator RunFlow()
+    private void ShowNextLetter()
     {
-        while (_currentLetterIndex < letters.Count)
+        _currentLetterIndex++;
+
+        if (_currentLetterIndex < letters.Count)
         {
             Letter currentLetter = letters[_currentLetterIndex];
-            currentLetter.gameObject.SetActive(true);
-            currentLetter.HideAllStrokes();
-
-            for (_currentStrokeIndex = 0; _currentStrokeIndex < currentLetter.StrokeCount; _currentStrokeIndex++)
-            {
-                Stroke stroke = currentLetter.GetStroke(_currentStrokeIndex);
-                drawer.ActiveStroke = stroke;
-
-                // 1. Show guide
-                stroke.ShowGuide();
-                yield return new WaitForSeconds(guideTime);
-
-                // 2. Show empty
-                stroke.ShowEmpty();
-
-                // Wait until the player finishes the stroke
-                bool finished = false;
-
-                void OnStrokeEnd(int id, LineRenderer line, Stroke s)
-                {
-                    if (s == stroke) // only accept the current stroke
-                        finished = true;
-                }
-
-                drawer.OnStrokeFinished += OnStrokeEnd;
-
-                yield return new WaitUntil(() => finished);
-
-                drawer.OnStrokeFinished -= OnStrokeEnd;
-
-                // 3. Show filled
-                stroke.ShowFilled();
-
-                yield return new WaitForSeconds(guideTime);
-            }
-
-            // After finishing all strokes, hide letter and wait before next
-            currentLetter.gameObject.SetActive(false);
-            yield return new WaitForSeconds(nextLetterDelay);
-
-            _currentLetterIndex++;
+            currentLetter.StartDrawing(); // let the letter handle its strokes
         }
+        else
+        {
+            Debug.Log("✅ All letters completed!");
+        }
+    }
+
+    public void OnLetterCompleted(Letter letter)
+    {
+        // Wait before showing the next letter
+        StartCoroutine(ShowNextLetterDelayed());
+    }
+
+    private IEnumerator ShowNextLetterDelayed()
+    {
+        yield return new WaitForSeconds(delayBetweenLetters);
+        ShowNextLetter();
     }
 }

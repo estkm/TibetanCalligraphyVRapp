@@ -2,35 +2,33 @@ using UnityEngine;
 
 public class Stroke : MonoBehaviour
 {
-    [SerializeField] private GameObject emptyObj;
-    [SerializeField] private GameObject filledObj;
-    [SerializeField] private GameObject guideObj;
+    [Header("Stroke Variants")]
+    public GameObject guideStroke;
+    public GameObject emptyStroke;
+    public GameObject filledStroke;
 
-    public void ShowGuide()
+    public void HideAll()
     {
-        guideObj.SetActive(true);
-        emptyObj.SetActive(false);
-        filledObj.SetActive(false);
+        if (guideStroke != null) guideStroke.SetActive(false);
+        if (emptyStroke != null) emptyStroke.SetActive(false);
+        if (filledStroke != null) filledStroke.SetActive(false);
     }
 
-    public void ShowEmpty()
+    public void ShowGuideAndEmpty()
     {
-        guideObj.SetActive(false);
-        emptyObj.SetActive(true);
-        filledObj.SetActive(false);
+        if (guideStroke != null) guideStroke.SetActive(true);
+        if (emptyStroke != null) emptyStroke.SetActive(true);
+        if (filledStroke != null) filledStroke.SetActive(false);
+    }
+
+    public void HideGuideAndEmpty()
+    {
+        if (guideStroke != null) guideStroke.SetActive(false);
+        if (emptyStroke != null) emptyStroke.SetActive(false);
     }
 
     public void ShowFilled()
     {
-        guideObj.SetActive(false);
-        emptyObj.SetActive(false);
-        filledObj.SetActive(true);
-    }
-
-    public void HideAll()
-    {
-        guideObj.SetActive(false);
-        emptyObj.SetActive(false);
-        filledObj.SetActive(false);
+        if (filledStroke != null) filledStroke.SetActive(true);
     }
 }
