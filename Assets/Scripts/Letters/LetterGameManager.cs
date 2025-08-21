@@ -20,6 +20,9 @@ public class LetterGameManager : MonoBehaviour
     private int _currentLetterIndex = -1;
     private int _currentStrokeIndex = -1;
 
+    // 🔒 bandera para evitar que un mismo stroke se valide más de una vez
+    private bool _strokeInProgress = false;
+
     private void Awake()
     {
         Instance = this;
@@ -27,26 +30,26 @@ public class LetterGameManager : MonoBehaviour
 
     private void Start()
     {
-        // Suscribirse al evento del drawer
         if (lineDrawer != null)
             lineDrawer.OnStrokeFinished += HandleStrokeFinished;
 
-        // Ocultar todo al inicio
         foreach (var letter in letters)
         {
             if (letter != null)
                 letter.HideAllStrokes();
         }
 
-        ShowNextLetter(); // Arrancamos con la primera letra
+        ShowNextLetter();
     }
 
     private void ShowNextLetter()
     {
-        if (_currentLetterIndex > -1){
+        if (_currentLetterIndex > -1)
+        {
             Letter lastLetter = letters[_currentLetterIndex];
             lastLetter.gameObject.SetActive(false);
         }
+
         _currentLetterIndex++;
         _currentStrokeIndex = -1;
 
@@ -62,12 +65,12 @@ public class LetterGameManager : MonoBehaviour
 
     private void ShowNextStroke()
     {
-
         _currentStrokeIndex++;
-        
+        _strokeInProgress = true; // 🔒 ahora estamos esperando este stroke
 
         Letter currentLetter = letters[_currentLetterIndex];
         currentLetter.gameObject.SetActive(true);
+
         if (_currentStrokeIndex < currentLetter.StrokeCount)
         {
             Stroke stroke = currentLetter.GetStroke(_currentStrokeIndex);
@@ -81,15 +84,21 @@ public class LetterGameManager : MonoBehaviour
 
     private void HandleStrokeFinished()
     {
+        // ✅ ignorar si no hay stroke activo
+        if (!_strokeInProgress) return;
+
         Letter currentLetter = letters[_currentLetterIndex];
         Stroke currentStroke = currentLetter.GetStroke(_currentStrokeIndex);
 
         OnStrokeCompleted(currentStroke);
     }
 
-    // 🔥 llamado cuando un stroke se completa
     public void OnStrokeCompleted(Stroke stroke)
     {
+        if (!_strokeInProgress) return; // seguridad extra
+
+        _strokeInProgress = false; // ✅ este stroke ya está validado
+
         stroke.HideGuideAndEmpty();
         stroke.ShowFilled();
 
