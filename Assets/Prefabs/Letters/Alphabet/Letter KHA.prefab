@@ -374,6 +374,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 253886220064595973, guid: bf9a1f12d7bd65848af099c6e5d0bdf6, type: 3}
+      propertyPath: completionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 228aef6b5713ce74a9cb383cf7515b71, type: 3}
+    - target: {fileID: 253886220064595973, guid: bf9a1f12d7bd65848af099c6e5d0bdf6, type: 3}
       propertyPath: strokes.Array.size
       value: 5
       objectReference: {fileID: 0}

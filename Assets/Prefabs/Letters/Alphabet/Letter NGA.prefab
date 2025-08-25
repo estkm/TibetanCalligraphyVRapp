@@ -253,6 +253,10 @@ PrefabInstance:
       value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 253886220064595973, guid: bf9a1f12d7bd65848af099c6e5d0bdf6, type: 3}
+      propertyPath: completionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 526f6117648c85e4dad1d57bce58ce93, type: 3}
+    - target: {fileID: 253886220064595973, guid: bf9a1f12d7bd65848af099c6e5d0bdf6, type: 3}
       propertyPath: strokes.Array.size
       value: 5
       objectReference: {fileID: 0}

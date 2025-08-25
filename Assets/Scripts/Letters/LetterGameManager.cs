@@ -13,6 +13,12 @@ public class LetterGameManager : MonoBehaviour
     public float delayBetweenStrokes = 5f;
     public float delayBetweenLetters = 5f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+
+    [Header("Completion")]
+    [SerializeField] private GameObject completionStamp; // Stamp that appears when all letters are completed
+
     [Header("References")]
     [Tooltip("Arrastra aquí el RaycastLineDrawerTrigger")]
     public RaycastLineDrawerTrigger lineDrawer;
@@ -32,6 +38,10 @@ public class LetterGameManager : MonoBehaviour
     {
         if (lineDrawer != null)
             lineDrawer.OnStrokeFinished += HandleStrokeFinished;
+
+        // Hide the completion stamp at start
+        if (completionStamp != null)
+            completionStamp.SetActive(false);
 
         foreach (var letter in letters)
         {
@@ -59,8 +69,22 @@ public class LetterGameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("✅ Todas las letras completadas!");
+            // All letters completed! Show completion stamp and end the flow
+            ShowCompletionStamp();
         }
+    }
+
+    private void ShowCompletionStamp()
+    {
+        Debug.Log("✅ Todas las letras completadas!");
+        
+        // Activate the completion stamp
+        if (completionStamp != null)
+        {
+            completionStamp.SetActive(true);
+        }
+        
+        // The game flow ends here - no more progression
     }
 
     private void ShowNextStroke()
@@ -78,7 +102,18 @@ public class LetterGameManager : MonoBehaviour
         }
         else
         {
-            StartCoroutine(ShowNextLetterDelayed());
+
+            // Check if this was the last letter
+            if (_currentLetterIndex >= letters.Count - 1)
+            {
+                // This was the last letter, show completion stamp
+                ShowCompletionStamp();
+            }
+            else
+            {
+                // Continue to next letter
+                StartCoroutine(ShowNextLetterDelayed());
+            }
         }
     }
 
@@ -102,7 +137,22 @@ public class LetterGameManager : MonoBehaviour
         stroke.HideGuideAndEmpty();
         stroke.ShowFilled();
 
+        // Check if this was the last stroke of the letter
+        if (_currentStrokeIndex >= letters[_currentLetterIndex].StrokeCount - 1)
+        {
+            // Letter completed! Play the specific completion sound for this letter immediately
+            PlayLetterCompletedSound(letters[_currentLetterIndex]);
+        }
+
         StartCoroutine(ShowNextStrokeDelayed());
+    }
+
+    private void PlayLetterCompletedSound(Letter letter)
+    {
+        if (audioSource != null && letter != null && letter.CompletionSound != null)
+        {
+            audioSource.PlayOneShot(letter.CompletionSound);
+        }
     }
 
     private IEnumerator ShowNextStrokeDelayed()
