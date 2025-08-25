@@ -6352,7 +6352,7 @@ MonoBehaviour:
   drawLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  lineRendererPrefab: {fileID: 47962590247670032, guid: 11c6d373076712c49bfdc6ea5fa35bd7, type: 3}
+  lineRendererPrefab: {fileID: 47962590247670032, guid: d64ae2ea430ed9e4c917a98838ca7f5a, type: 3}
 --- !u!1 &1225517152
 GameObject:
   m_ObjectHideFlags: 0

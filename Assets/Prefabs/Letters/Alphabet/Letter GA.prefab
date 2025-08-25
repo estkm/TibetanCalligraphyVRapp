@@ -1,5 +1,80 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5183174206022883005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4051366007319659233}
+  - component: {fileID: 2022475988317567475}
+  - component: {fileID: 5807519651366404642}
+  m_Layer: 5
+  m_Name: FinishedStroke (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4051366007319659233
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183174206022883005}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1387145027769064136}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 82, y: 316.9}
+  m_SizeDelta: {x: 87, y: 53}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2022475988317567475
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183174206022883005}
+  m_CullTransparentMesh: 1
+--- !u!114 &5807519651366404642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183174206022883005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2277e8e4ed9ff0346bb13ad8af7d1b52, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1001 &970762327209164066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84,6 +159,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 689
       objectReference: {fileID: 0}
+    - target: {fileID: 2177761160927766506, guid: ea5c453b0c20c894a90c94fabbf24238, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2682460825578709522, guid: ea5c453b0c20c894a90c94fabbf24238, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -142,7 +221,10 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 29066387403727349af940dae1d0cd43, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2177761160927766506, guid: ea5c453b0c20c894a90c94fabbf24238, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4051366007319659233}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea5c453b0c20c894a90c94fabbf24238, type: 3}
 --- !u!4 &897242384315487829 stripped
@@ -161,6 +243,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 221ad8314addfa44796b2d12a34b4041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stroke
+--- !u!224 &1387145027769064136 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2177761160927766506, guid: ea5c453b0c20c894a90c94fabbf24238, type: 3}
+  m_PrefabInstance: {fileID: 970762327209164066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8266535912763503343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,6 +459,10 @@ PrefabInstance:
     - target: {fileID: 5532960047007727887, guid: bf9a1f12d7bd65848af099c6e5d0bdf6, type: 3}
       propertyPath: m_SizeDelta.y
       value: 343
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702305466325012340, guid: bf9a1f12d7bd65848af099c6e5d0bdf6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5829448181072206469, guid: bf9a1f12d7bd65848af099c6e5d0bdf6, type: 3}
       propertyPath: m_Name

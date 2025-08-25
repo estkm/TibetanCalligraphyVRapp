@@ -60,6 +60,14 @@ public class RaycastLineDrawerTrigger : MonoBehaviour
             if (_isDrawing)
             {
                 _isDrawing = false;
+                
+                // Remove the current line immediately
+                if (_currentLineRenderer != null)
+                {
+                    _linesRenderer.Remove(_currentLineRenderer);
+                    Destroy(_currentLineRenderer.gameObject);
+                }
+                
                 OnStrokeFinished?.Invoke(); // Disparamos evento
             }
         }
