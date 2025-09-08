@@ -1,0 +1,17 @@
+newmtl tripo_material_f7e2aedc-5da4-40f9-b954-8027fce111c4
+illum 7
+Kd 0.735357 0.735357 0.735357
+adobe_interior_color 1 1 1
+Ni 1.5
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm himalayas/tripo_material_f7e2aedc-5da4-40f9-b954-8027fce111c4_metallic.png
+adobe_translucence 0
+map_Pr himalayas/tripo_material_f7e2aedc-5da4-40f9-b954-8027fce111c4_roughness.png
+Ns 16
+Ks 1 1 1
+map_Kd himalayas/tripo_material_f7e2aedc-5da4-40f9-b954-8027fce111c4_base_color.png
+norm himalayas/tripo_material_f7e2aedc-5da4-40f9-b954-8027fce111c4_normal.png

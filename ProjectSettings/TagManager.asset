@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Anchor
+  - Obstacle
+  - Goal
+  - Collectible
+  - Enemy
   layers:
   - Default
   - TransparentFX

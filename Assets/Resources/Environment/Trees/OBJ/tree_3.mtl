@@ -1,0 +1,17 @@
+newmtl tripo_material_213e4f00-a9dd-419b-aa1e-0879150e3de8
+illum 7
+Kd 0.735357 0.735357 0.735357
+adobe_interior_color 1 1 1
+Ni 1.5
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm tree_3/tripo_material_213e4f00-a9dd-419b-aa1e-0879150e3de8_metallic.png
+adobe_translucence 0
+map_Pr tree_3/tripo_material_213e4f00-a9dd-419b-aa1e-0879150e3de8_roughness.png
+Ns 16
+Ks 1 1 1
+map_Kd tree_3/tripo_material_213e4f00-a9dd-419b-aa1e-0879150e3de8_base_color.png
+norm tree_3/tripo_material_213e4f00-a9dd-419b-aa1e-0879150e3de8_normal.png

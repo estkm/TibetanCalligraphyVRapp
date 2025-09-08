@@ -1,0 +1,17 @@
+newmtl tripo_material_7126118c-2065-4ddb-863a-6c259e6e1d90
+illum 7
+Kd 0.735357 0.735357 0.735357
+adobe_interior_color 1 1 1
+Ni 1.5
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm gonpa/tripo_material_7126118c-2065-4ddb-863a-6c259e6e1d90_metallic.png
+adobe_translucence 0
+map_Pr gonpa/tripo_material_7126118c-2065-4ddb-863a-6c259e6e1d90_roughness.png
+Ns 16
+Ks 1 1 1
+map_Kd gonpa/tripo_material_7126118c-2065-4ddb-863a-6c259e6e1d90_base_color.png
+norm gonpa/tripo_material_7126118c-2065-4ddb-863a-6c259e6e1d90_normal.png
