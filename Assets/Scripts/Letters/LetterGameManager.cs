@@ -19,6 +19,9 @@ public class LetterGameManager : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
 
+    [SerializeField] private AudioClip WrongAudio;
+    [SerializeField] private AudioClip CorrectAudio;
+
     [Header("Completion")]
     [SerializeField] private GameObject completionStamp; // Stamp that appears when all letters are completed
 
@@ -141,6 +144,8 @@ public class LetterGameManager : MonoBehaviour
 
         stroke.HideGuideAndEmpty();
         stroke.ShowFilled();
+        audioSource.PlayOneShot(CorrectAudio);
+        // else audioSource.PlayOneShot(WrongAudio);
 
         // Check if this was the last stroke of the letter
         if (_currentStrokeIndex >= letters[_currentLetterIndex].StrokeCount - 1)
