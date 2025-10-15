@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 public class LetterGameManager : MonoBehaviour
 {
     public static LetterGameManager Instance;
+
+    public UnityEvent OnAllLettersCompleted;
 
     [Header("Letters Setup")]
     public List<Letter> letters = new List<Letter>();
@@ -71,6 +74,7 @@ public class LetterGameManager : MonoBehaviour
         {
             // All letters completed! Show completion stamp and end the flow
             ShowCompletionStamp();
+            OnAllLettersCompleted.Invoke();
         }
     }
 
@@ -108,6 +112,7 @@ public class LetterGameManager : MonoBehaviour
             {
                 // This was the last letter, show completion stamp
                 ShowCompletionStamp();
+                OnAllLettersCompleted.Invoke();
             }
             else
             {
