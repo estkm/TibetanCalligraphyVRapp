@@ -736,7 +736,6 @@ MonoBehaviour:
   - {fileID: -1991502090188358110}
   - {fileID: -8358487083932745228}
   - {fileID: 8759366741247560425}
-  - {fileID: 8231708308158450767}
   - {fileID: 5185910735314338884}
   - {fileID: 5002981905155096068}
   - {fileID: 1545823429219164807}
@@ -870,7 +869,6 @@ MonoBehaviour:
   - {fileID: 8582519029985636417}
   - {fileID: 4876977949444443456}
   - {fileID: 6729535526125116176}
-  - {fileID: -9177689780025214890}
   - {fileID: -9076774076234293603}
   - {fileID: 5645732096972157785}
   - {fileID: -2192274149742208503}
@@ -1058,7 +1056,6 @@ MonoBehaviour:
   - {fileID: -8602898579829568561}
   - {fileID: -108200035323997920}
   - {fileID: 147228438309725162}
-  - {fileID: 8926395304868387111}
   - {fileID: -2381477133030584647}
   - {fileID: 1070505300935040877}
   - {fileID: -5019045562822750365}
@@ -1643,6 +1640,7 @@ MonoBehaviour:
   m_Name: LogitechMxInkControllerProfile Android
   m_EditorClassIdentifier: Assembly-CSharp::UnityEngine.XR.OpenXR.Features.Interactions.LogitechMxInkControllerProfile
   m_enabled: 1
+  <failedInitialization>k__BackingField: 0
   nameUi: Logitech MX Ink Stylus Interaction Profile
   version: 1.0.0
   featureIdInternal: com.unity.openxr.feature.input.logitechmxink
