@@ -2758,6 +2758,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8703513297745956036, guid: 20251267c934dac4da1e6f18041047e9, type: 3}
+      propertyPath: _left_touch_controller
+      value: 
+      objectReference: {fileID: 1648841119}
+    - target: {fileID: 8703513297745956036, guid: 20251267c934dac4da1e6f18041047e9, type: 3}
+      propertyPath: _right_touch_controller
+      value: 
+      objectReference: {fileID: 231117152}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
