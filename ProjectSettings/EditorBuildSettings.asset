@@ -10,10 +10,13 @@ EditorBuildSettings:
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 0
     path: Assets/Scenes/ForeverSnowland.unity
-    guid: 58464700fb4204f178498c4e70d4f7a2
-  - enabled: 1
-    path: Assets/Scenes/ForeverSnowland_FinalSprint.unity
     guid: aaaef2757f2e94dfda7e260dbbd4299d
+  - enabled: 0
+    path: Assets/Scenes/ForeverSnowland.unity
+    guid: aaaef2757f2e94dfda7e260dbbd4299d
+  - enabled: 1
+    path: Assets/Scenes/ForeverSnowlandStylus.unity
+    guid: 356a028d0292d40b1a90bf36598ad45a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
