@@ -3861,7 +3861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68c778cf75edd6439827b4c58d5dd16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RaycastLineDrawerTrigger
-  drawingPointer: {fileID: 1606563288}
+  drawingPointer: {fileID: 1337594440}
   rayDistance: 0.042
   drawLayerMask:
     serializedVersion: 2
@@ -5643,7 +5643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1606563288
 Transform:
   m_ObjectHideFlags: 0
