@@ -8,9 +8,14 @@ public class Letter : MonoBehaviour
     [Header("Letter Components")]
     [SerializeField] private Stroke[] strokes;
 
+    [Header("Letter Tile")]
+    [SerializeField] private GameObject tile;
+
     public int StrokeCount => strokes.Length;
     
     public AudioClip CompletionSound => completionSound;
+
+    public GameObject Tile => tile;
 
     public Stroke GetStroke(int index)
     {

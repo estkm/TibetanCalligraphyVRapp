@@ -131,6 +131,7 @@ public class LetterGameManager : MonoBehaviour
         if (_currentStrokeIndex >= letters[_currentLetterIndex].StrokeCount - 1)
         {
             PlayLetterCompletedSound(letters[_currentLetterIndex]);
+
         }
 
         StartCoroutine(ShowNextStrokeDelayed());
@@ -138,6 +139,7 @@ public class LetterGameManager : MonoBehaviour
 
     private void PlayLetterCompletedSound(Letter letter)
     {
+        letter?.Tile?.SetActive(true);
         if (audioSource != null && letter?.CompletionSound != null)
             audioSource.PlayOneShot(letter.CompletionSound);
     }

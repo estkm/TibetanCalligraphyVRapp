@@ -37,10 +37,10 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: -22
+    x: -27
     y: -1433
-    width: 1348
-    height: 2433
+    width: 1355
+    height: 2449
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -89,73 +89,9 @@ MonoBehaviour:
     realType: Mesh
     defaultValue:
       m_Type:
-        m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
+        m_SerializableType: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":-2907462421268956602,"guid":"8df2101862cc11f4b9125eec6e9ec890","type":3}}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: Rate
-    path: Rate
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Int
-    realType: Int32
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 24
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: Initial Position
-    path: Initial Position
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Vector3f
-    realType: Vector3
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":0.0,"z":0.0}'
-    min: -Infinity
-    max: Infinity
-    enumValues: []
-    descendantCount: 0
-  - name: Emitter Radius
-    path: Emitter Radius
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Int
-    realType: Int32
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
-    min: 1
-    max: 5
-    enumValues: []
-    descendantCount: 0
-  - name: Direction
-    path: Direction
-    tooltip: 
-    space: -1
-    spaceable: 0
-    sheetType: m_Vector3f
-    realType: Vector3
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":-1.0,"z":0.0}'
+      m_SerializableObject: 
     min: -Infinity
     max: Infinity
     enumValues: []
@@ -176,6 +112,70 @@ MonoBehaviour:
     max: 20
     enumValues: []
     descendantCount: 0
+  - name: Emitter Radius
+    path: Emitter Radius
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Int
+    realType: Int32
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 1
+    min: 1
+    max: 5
+    enumValues: []
+    descendantCount: 0
+  - name: Initial Position
+    path: Initial Position
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Vector3f
+    realType: Vector3
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"x":0.0,"y":0.0,"z":0.0}'
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: Direction
+    path: Direction
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Vector3f
+    realType: Vector3
+    defaultValue:
+      m_Type:
+        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_SerializableObject: '{"x":0.0,"y":-1.0,"z":0.0}'
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: Rate
+    path: Rate
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Int
+    realType: Int32
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 24
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
   - name: Lifetime
     path: Lifetime
     tooltip: 
@@ -193,7 +193,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 0
   m_ImportDependencies: []
-  m_GraphVersion: 18
+  m_GraphVersion: 19
   m_ResourceVersion: 1
   m_SubgraphDependencies: []
   m_CategoryPath: 
@@ -209,10 +209,6 @@ VisualEffectResource:
     m_RendererSettings:
       motionVectorGenerationMode: 0
       shadowCastingMode: 0
-      rayTracingMode: 0
-      receiveShadows: 0
-      reflectionProbeUsage: 0
-      lightProbeUsage: 0
     m_CullingFlags: 0
     m_UpdateMode: 0
     m_PreWarmDeltaTime: 0.05
@@ -446,7 +442,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661614871}
       inputSlot: {fileID: 8926484042661614954}
-    position: {x: 634, y: 815}
+    position: {x: 550, y: 726.6667}
     expandedSlots: []
     expanded: 1
     supecollapsed: 1
@@ -529,6 +525,7 @@ MonoBehaviour:
   sortingPriority: 0
   m_SubOutputs:
   - {fileID: 8926484042661614957}
+  useBaseColorMap: 3
   colorMapping: 0
   uvMode: 0
   flipbookLayout: 0
@@ -557,7 +554,6 @@ MonoBehaviour:
   materialType: 0
   workflowMode: 0
   smoothnessSource: 0
-  useBaseColorMap: 3
   useOcclusionMap: 0
   useMetallicMap: 0
   useSpecularMap: 0
@@ -668,7 +664,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"3c35fe05492defb4fa2a9a0d22bcf4b8","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"6b2c3f9751ab02743a0f994deb54503b","type":3}}'
     m_Space: -1
   m_Property:
     name: baseColorMap
@@ -702,7 +698,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":-2907462421268956602,"guid":"8df2101862cc11f4b9125eec6e9ec890","type":3}}'
+      m_SerializableObject: 
     m_Space: -1
   m_Property:
     name: mesh
@@ -779,7 +775,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 624, y: 915}
+  m_UIPosition: {x: 624, y: 923}
   m_UICollapsed: 0
   m_UISuperCollapsed: 1
   m_InputSlots:
@@ -956,7 +952,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615022}
   m_ExposedName: Size
   m_Exposed: 1
-  m_Order: 5
+  m_Order: 1
   m_Category: 
   m_Min:
     m_Type:
@@ -979,7 +975,7 @@ MonoBehaviour:
       inputSlot: {fileID: 8926484042661615016}
     - outputSlot: {fileID: 8926484042661615022}
       inputSlot: {fileID: 8926484042661615525}
-    position: {x: 242, y: 915}
+    position: {x: 255.33333, y: 915.3334}
     expandedSlots: []
     expanded: 1
     supecollapsed: 1
@@ -1042,7 +1038,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615041}
   m_ExposedName: Emitter Radius
   m_Exposed: 1
-  m_Order: 3
+  m_Order: 2
   m_Category: 
   m_Min:
     m_Type:
@@ -1117,7 +1113,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 574, y: -476}
+  m_UIPosition: {x: 569, y: -459}
   m_UICollapsed: 0
   m_UISuperCollapsed: 1
   m_InputSlots:
@@ -1149,7 +1145,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: -22, y: -502}
+  m_UIPosition: {x: -27, y: -485}
   m_UICollapsed: 0
   m_UISuperCollapsed: 1
   m_InputSlots: []
@@ -1208,7 +1204,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 175, y: -502}
+  m_UIPosition: {x: 171, y: -485}
   m_UICollapsed: 0
   m_UISuperCollapsed: 1
   m_InputSlots:
@@ -1338,7 +1334,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 342, y: -502}
+  m_UIPosition: {x: 337, y: -485}
   m_UICollapsed: 0
   m_UISuperCollapsed: 1
   m_InputSlots:
@@ -1402,7 +1398,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 322, y: -405}
+  m_UIPosition: {x: 317, y: -389}
   m_UICollapsed: 0
   m_UISuperCollapsed: 1
   m_InputSlots:
@@ -3645,7 +3641,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615484}
   m_ExposedName: Initial Position
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 3
   m_Category: 
   m_Min:
     m_Type:
@@ -4011,7 +4007,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615501}
   m_ExposedName: Rate
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 5
   m_Category: 
   m_Min:
     m_Type:
@@ -4317,7 +4313,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 409, y: 843}
+  m_UIPosition: {x: 419, y: 868}
   m_UICollapsed: 0
   m_UISuperCollapsed: 1
   m_InputSlots:
