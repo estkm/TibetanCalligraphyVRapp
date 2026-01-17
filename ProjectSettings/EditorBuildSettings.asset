@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ForeverSnowland.unity
     guid: aaaef2757f2e94dfda7e260dbbd4299d
   - enabled: 1
-    path: Assets/Scenes/ForeverSnowlandStylus.unity
+    path: Assets/Scenes/ForeverSnowlandStylusTmp.unity
     guid: 356a028d0292d40b1a90bf36598ad45a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
