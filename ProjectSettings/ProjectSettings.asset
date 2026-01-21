@@ -168,7 +168,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.nyb.ForeverSnowland
+    Android: com.DefaultCompany.ForeverSnowlandtracing
     Standalone: com.Unity-Technologies.VR-Template
   buildNumber:
     Standalone: 0
@@ -176,7 +176,7 @@ PlayerSettings:
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 1
+  AndroidBundleVersionCode: 7
   AndroidMinSdkVersion: 32
   AndroidTargetSdkVersion: 32
   AndroidPreferredInstallLocation: 0
@@ -270,8 +270,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 2
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Users/briammora/Opal Interactive/Keychain/sibyllabs.keystore
-  AndroidKeyaliasName: sibyl labs
+  AndroidKeystoreName: /Users/ekong/Documents/Personal/user.keystore
+  AndroidKeyaliasName: foreversnowland
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidEnableArm64MTE: 0
   AndroidBuildApkPerCpuArchitecture: 0
