@@ -17,9 +17,7 @@ public class Stroke : MonoBehaviour
 
     public void HideAll()
     {
-        if (guideStroke) guideStroke.SetActive(false);
-        if (emptyStroke) emptyStroke.SetActive(false);
-        if (filledStroke) filledStroke.SetActive(false);
+        return;   
     }
 
     public void ShowGuideAndEmpty()
