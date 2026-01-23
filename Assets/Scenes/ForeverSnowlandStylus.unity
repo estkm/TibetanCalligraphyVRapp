@@ -205,7 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e95ce5342328a44f88aeaf2814e278f8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1202560750211218023, guid: e95ce5342328a44f88aeaf2814e278f8, type: 3}
       propertyPath: m_IsActive
@@ -352,6 +352,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &44639940
 MeshFilter:
@@ -384,7 +385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &89918318
 Transform:
   m_ObjectHideFlags: 0
@@ -472,6 +473,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &89918321
 MeshFilter:
@@ -1358,6 +1360,10 @@ PrefabInstance:
       propertyPath: 'pathPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 788775352}
+    - target: {fileID: 8159782215561384682, guid: b22cd0c3ad975b64d81664729756b32c, type: 3}
+      propertyPath: tile
+      value: 
+      objectReference: {fileID: 1775057488}
     - target: {fileID: 8209262450495558045, guid: b22cd0c3ad975b64d81664729756b32c, type: 3}
       propertyPath: pathPoints.Array.size
       value: 3
@@ -2359,6 +2365,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &452841495
 MeshFilter:
@@ -2864,7 +2871,7 @@ MonoBehaviour:
   m_LineOriginOffset: 0
 --- !u!120 &551632279
 LineRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2910,6 +2917,7 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
@@ -2975,7 +2983,6 @@ LineRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
@@ -3000,6 +3007,8 @@ MonoBehaviour:
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -3317,7 +3326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &561693931
 Transform:
   m_ObjectHideFlags: 0
@@ -4650,6 +4659,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8159782215561384682, guid: 92da112de79c86a45a70c0af4064369f, type: 3}
+      propertyPath: tile
+      value: 
+      objectReference: {fileID: 1775057489}
     - target: {fileID: 8264018203206026660, guid: 92da112de79c86a45a70c0af4064369f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32
@@ -4868,6 +4881,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1234812436
 MeshFilter:
@@ -5365,6 +5379,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 33
       objectReference: {fileID: 0}
+    - target: {fileID: 8159782215561384682, guid: c89f2191fee7f3642937ecba605baa08, type: 3}
+      propertyPath: tile
+      value: 
+      objectReference: {fileID: 1775057487}
     - target: {fileID: 8209262450495558045, guid: c89f2191fee7f3642937ecba605baa08, type: 3}
       propertyPath: pathPoints.Array.size
       value: 3
@@ -5612,6 +5630,7 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
 --- !u!2083052967 &1513926126
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -5926,14 +5945,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619688658}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -6296,6 +6315,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.067
       objectReference: {fileID: 0}
+    - target: {fileID: 8159782215561384682, guid: 9574be715201c244d9417ca1baa287da, type: 3}
+      propertyPath: tile
+      value: 
+      objectReference: {fileID: 1775057490}
     - target: {fileID: 8209262450495558045, guid: 9574be715201c244d9417ca1baa287da, type: 3}
       propertyPath: pathPoints.Array.size
       value: 5
@@ -6593,17 +6616,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4755909385240380477, guid: 89052717b3a714c98814c0f079882da2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -1307058809556017915, guid: 89052717b3a714c98814c0f079882da2, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 28863775277c14523a2adb65fc38b1ac, type: 2}
+    - target: {fileID: -446975587359916936, guid: 89052717b3a714c98814c0f079882da2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -10777424779697952, guid: 89052717b3a714c98814c0f079882da2, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 3a83f5f843a00498f9cc9403ca7b132f, type: 2}
+    - target: {fileID: 848580400415008544, guid: 89052717b3a714c98814c0f079882da2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 89052717b3a714c98814c0f079882da2, type: 3}
       propertyPath: m_Name
       value: tiles_test
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202560750211218023, guid: 89052717b3a714c98814c0f079882da2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2772366850374452060, guid: 89052717b3a714c98814c0f079882da2, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -6622,6 +6661,26 @@ PrefabInstance:
 --- !u!4 &1775057486 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 89052717b3a714c98814c0f079882da2, type: 3}
+  m_PrefabInstance: {fileID: 1775057485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1775057487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4755909385240380477, guid: 89052717b3a714c98814c0f079882da2, type: 3}
+  m_PrefabInstance: {fileID: 1775057485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1775057488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 848580400415008544, guid: 89052717b3a714c98814c0f079882da2, type: 3}
+  m_PrefabInstance: {fileID: 1775057485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1775057489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -446975587359916936, guid: 89052717b3a714c98814c0f079882da2, type: 3}
+  m_PrefabInstance: {fileID: 1775057485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1775057490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1202560750211218023, guid: 89052717b3a714c98814c0f079882da2, type: 3}
   m_PrefabInstance: {fileID: 1775057485}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1784907086
@@ -7536,6 +7595,7 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
 --- !u!2083052967 &2084343589
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -7746,6 +7806,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &2111696556
 MeshFilter:
@@ -7968,6 +8029,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &265607808502843418
 GameObject:
@@ -8035,6 +8097,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &308999862431235399
 MonoBehaviour:
@@ -8212,6 +8275,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &742272466393337127
 MonoBehaviour:
@@ -8270,6 +8334,8 @@ MonoBehaviour:
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -8341,6 +8407,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &857904467151181436
 MonoBehaviour:
@@ -8439,6 +8506,7 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!4 &1060171318908815363
 Transform:
   m_ObjectHideFlags: 0
@@ -8777,7 +8845,7 @@ GameObject:
   m_IsActive: 1
 --- !u!120 &1267965611874996707
 LineRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8823,6 +8891,7 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
@@ -8879,7 +8948,6 @@ LineRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
@@ -9146,6 +9214,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1717954560120711357
 GameObject:
@@ -9337,6 +9406,8 @@ MonoBehaviour:
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -9555,6 +9626,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &1908652219294472179
 Transform:
@@ -9688,6 +9760,8 @@ MonoBehaviour:
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -9792,6 +9866,8 @@ MonoBehaviour:
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -10132,7 +10208,7 @@ GameObject:
   m_IsActive: 1
 --- !u!120 &2449787135179118990
 LineRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10178,6 +10254,7 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
@@ -10243,7 +10320,6 @@ LineRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
@@ -10498,6 +10574,8 @@ MonoBehaviour:
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -10936,6 +11014,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &2970600109576365855
 Transform:
@@ -11074,6 +11153,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &3131572439327975496
 Transform:
@@ -12100,6 +12180,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &4009315131939282743
 Transform:
@@ -12367,6 +12448,8 @@ MonoBehaviour:
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -12857,6 +12940,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5227292468971927391
 GameObject:
@@ -12980,6 +13064,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &5454069417874329793
 Transform:
@@ -13041,6 +13126,7 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!4 &5556032915771980390
 Transform:
   m_ObjectHideFlags: 0
@@ -13469,6 +13555,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6207282246594118015
 MonoBehaviour:
@@ -14096,6 +14183,7 @@ SkinnedMeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 1
@@ -14207,6 +14295,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &7054646182411086109
 MonoBehaviour:
@@ -14460,6 +14549,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!23 &7552299325935862934
 MeshRenderer:
@@ -14508,6 +14598,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &7559473368833528293
 MeshFilter:
@@ -14564,6 +14655,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &7635210559792911839
 Transform:
@@ -14607,6 +14699,7 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!114 &7876541750643992065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14633,6 +14726,7 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 30005
   m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!4 &7951184427527427223
 Transform:
   m_ObjectHideFlags: 0
@@ -14969,7 +15063,7 @@ GameObject:
   m_IsActive: 1
 --- !u!120 &8108794592707170172
 LineRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15015,6 +15109,7 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Positions: []
   m_Parameters:
     serializedVersion: 3
@@ -15071,7 +15166,6 @@ LineRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
@@ -15219,6 +15313,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &8559622108273339837
 MonoBehaviour:
@@ -15335,6 +15430,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &8716131203083624493
 Transform:
@@ -15439,6 +15535,8 @@ MonoBehaviour:
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -15674,6 +15772,7 @@ SkinnedMeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 1
