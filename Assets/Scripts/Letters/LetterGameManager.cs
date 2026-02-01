@@ -54,8 +54,7 @@ public class LetterGameManager : MonoBehaviour
 
     private void ShowNextLetter()
     {
-        if (_currentLetterIndex > -1)
-            letters[_currentLetterIndex].gameObject.SetActive(false);
+      
 
         _currentLetterIndex++;
         _currentStrokeIndex = -1;

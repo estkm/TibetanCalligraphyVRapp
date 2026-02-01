@@ -38,14 +38,17 @@ public class ResetScene : MonoBehaviour
             }
         }
 
-        if (IsSecondaryButtonPressed(leftController))
-        {
-            // Reload the current scene
-            Scene currentScene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(currentScene.name);
-        }
+      if (IsSecondaryButtonPressed(leftController))
+    {
+       RestartAll();
     }
+}
 
+public void RestartAll()
+{
+    Scene currentScene = SceneManager.GetActiveScene();
+    SceneManager.LoadScene(currentScene.name);
+}
     private bool IsSecondaryButtonPressed(InputDevice device)
     {
         bool value;

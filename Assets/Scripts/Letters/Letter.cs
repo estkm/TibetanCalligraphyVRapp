@@ -25,6 +25,7 @@ public class Letter : MonoBehaviour
 
     public void HideAllStrokes()
     {
+        return;
         foreach (var s in strokes)
             s.HideAll();
     }

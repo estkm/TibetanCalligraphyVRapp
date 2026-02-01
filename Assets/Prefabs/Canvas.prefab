@@ -73,7 +73,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1c8faa1703d0be7408e2503d80018bd2, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1c8faa1703d0be7408e2503d80018bd2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.396
@@ -235,7 +235,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d405cecc345994f4aa31323249aee71d, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d405cecc345994f4aa31323249aee71d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.478
@@ -439,7 +439,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 19c20b5d4a1ca8949b8da4d35091460d, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 19c20b5d4a1ca8949b8da4d35091460d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.626
@@ -1717,7 +1717,7 @@ PrefabInstance:
     - target: {fileID: 4936331179644639265, guid: 559269975b26faf4999c994ab8489bb7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2a39bbee40e91eb418d9883a7177a285, type: 3}
+      objectReference: {fileID: 21300000, guid: a87faae18d48c4f729d3add28709c637, type: 3}
     - target: {fileID: 5741101252447485475, guid: 559269975b26faf4999c994ab8489bb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -1741,7 +1741,7 @@ PrefabInstance:
     - target: {fileID: 5741101252447485475, guid: 559269975b26faf4999c994ab8489bb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2154601656301961477}
+      objectReference: {fileID: 3320876663367995386}
     - target: {fileID: 5741101252447485475, guid: 559269975b26faf4999c994ab8489bb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
