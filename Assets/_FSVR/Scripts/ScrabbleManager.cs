@@ -19,6 +19,7 @@ namespace FSVR
 
         public void StartGame()
         {
+            gameObject.SetActive(true);
             DisplayHouseSymbols();
             
         }
@@ -30,6 +31,11 @@ namespace FSVR
                 houseSymbol.SetActive(true);
             }
             
+        }
+
+        void DisplayHouse()
+        {
+            house.SetActive(true);
         }
 
         void FinishGame()
