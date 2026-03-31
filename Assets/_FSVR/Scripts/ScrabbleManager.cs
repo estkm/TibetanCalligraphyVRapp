@@ -1,4 +1,5 @@
 
+using DG.Tweening;
 using UnityEngine;
 
 namespace FSVR
@@ -7,6 +8,7 @@ namespace FSVR
     {
         [SerializeField] private GameObject house;
         [SerializeField] private GameObject[] houseSymbols;
+        [SerializeField] private GameObject[] houseTiles;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -23,6 +25,10 @@ namespace FSVR
         
         void DisplayHouseSymbols()
         {
+            foreach (GameObject houseSymbol in houseSymbols)
+            {
+                houseSymbol.SetActive(true);
+            }
             
         }
 
