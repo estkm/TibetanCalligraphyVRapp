@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/_FSVR/Scenes/MISC scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 0
-    path: Assets/Scenes/ForeverSnowland.unity
+    path: Assets/_FSVR/Scenes/ForeverSnowland.unity
     guid: aaaef2757f2e94dfda7e260dbbd4299d
   - enabled: 0
-    path: Assets/Scenes/ForeverSnowland.unity
+    path: Assets/_FSVR/Scenes/ForeverSnowland.unity
     guid: aaaef2757f2e94dfda7e260dbbd4299d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ForeverSnowlandStylusTmp.unity
     guid: 356a028d0292d40b1a90bf36598ad45a
   m_configObjects:
