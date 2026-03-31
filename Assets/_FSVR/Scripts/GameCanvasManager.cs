@@ -9,19 +9,10 @@ public class GameCanvasManager : MonoBehaviour
     [SerializeField] private ScrabbleManager scrabbleManager;
     [SerializeField] private GameObject baseGame;
     
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
     private void OnEnable()
     {
         RevealWelcomeItems();
         //Debug.Log("--GameCanvasManager OnEnable");
-        
-        
     }
 
     public void RevealWelcomeItems()
