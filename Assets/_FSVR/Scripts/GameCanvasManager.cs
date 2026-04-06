@@ -6,8 +6,11 @@ using UnityEngine;
 public class GameCanvasManager : MonoBehaviour
 {
     [SerializeField] private GameObject welcomeItmes;
-    [SerializeField] private ScrabbleManager scrabbleManager;
     [SerializeField] private GameObject baseGame;
+    
+    [Header("Scrabble")]
+    [SerializeField] private GameObject scrabbleCanvas;
+    [SerializeField] private ScrabbleManager scrabbleManager;
     
     private void OnEnable()
     {
