@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 8688759241112408031}
   - component: {fileID: 7862353247422295330}
   m_Layer: 5
-  m_Name: Start (1)
+  m_Name: Start Scrabble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1f522b33694d4e3190d4d2cd03f31e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExperienceManager
-  welcomeItmes: {fileID: 2154601656301961477}
+  welcomeHolder: {fileID: 2154601656301961477}
   baseGame: {fileID: 0}
   scrabbleCanvas: {fileID: 575923243111761507}
   scrabbleManager: {fileID: 0}
