@@ -14,7 +14,6 @@ namespace FSVR
         void Start()
         {
             house.SetActive(false);
-
         }
 
         public void StartGame()
@@ -26,11 +25,10 @@ namespace FSVR
         
         void DisplayHouseSymbols()
         {
-            foreach (GameObject houseSymbol in houseSymbols)
+            foreach (var houseSymbol in houseSymbols)
             {
                 houseSymbol.SetActive(true);
             }
-            
         }
 
         void DisplayHouse()
@@ -40,7 +38,7 @@ namespace FSVR
 
         void FinishGame()
         {
-            house.SetActive(true);
+            DisplayHouse();
         }
         
     }
