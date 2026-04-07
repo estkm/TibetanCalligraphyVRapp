@@ -853,6 +853,7 @@ MonoBehaviour:
   baseGame: {fileID: 0}
   scrabbleCanvas: {fileID: 575923243111761507}
   scrabbleManager: {fileID: 0}
+  scrabbleButton: {fileID: 6573299610742400111}
 --- !u!223 &1869675206009494919
 Canvas:
   m_ObjectHideFlags: 0
