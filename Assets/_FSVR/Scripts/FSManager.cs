@@ -3,6 +3,9 @@ using UnityEngine;
 public class FSManager : MonoBehaviour
 {
     public static FSManager Instance { get; private set; }
+    
+    [SerializeField] private bool devMode = true;
+    public bool DevMode => devMode;
 
     [SerializeField] private GameObject baseGame;
 
