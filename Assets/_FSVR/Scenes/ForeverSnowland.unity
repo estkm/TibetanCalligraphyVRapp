@@ -3206,7 +3206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf64e9d163794a7eb28dae76838c106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FSManager
+  devMode: 0
   baseGame: {fileID: 561693930}
+  gameCanvasManager: {fileID: 3462316574064796115}
 --- !u!1 &1234812432
 GameObject:
   m_ObjectHideFlags: 0
@@ -8868,6 +8870,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1785658642924424992, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
   m_PrefabInstance: {fileID: 3462316574064796113}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3462316574064796115 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3382601311158702587, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
+  m_PrefabInstance: {fileID: 3462316574064796113}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f522b33694d4e3190d4d2cd03f31e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExperienceManager
 --- !u!114 &3498251532719862018
 MonoBehaviour:
   m_ObjectHideFlags: 0
