@@ -8,6 +8,7 @@ public class FSManager : MonoBehaviour
     public bool DevMode => devMode;
 
     [SerializeField] private GameObject baseGame;
+    [SerializeField] private GameCanvasManager gameCanvasManager;
 
     private void Awake()
     {
@@ -19,10 +20,18 @@ public class FSManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        if (devMode)
+        {
+            //
+            
+        }
     }
 
     public void TestLoad()
     {
         print("-- TestLoad");
     }
+    
+    
 }
