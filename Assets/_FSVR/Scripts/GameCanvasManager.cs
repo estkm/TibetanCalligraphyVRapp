@@ -1,5 +1,4 @@
-using System;
-using DG.Tweening;
+
 using FSVR;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -12,6 +11,17 @@ public class GameCanvasManager : MonoBehaviour
     [Header("Scrabble")]
     [SerializeField] private GameObject scrabbleCanvas;
     [SerializeField] private ScrabbleManager scrabbleManager;
+    [SerializeField] private GameObject scrabbleButton;
+    
+    private FSManager _FSManager;
+    
+    private void Awake()
+    {
+        _FSManager = FSManager.Instance;
+       
+        scrabbleButton.SetActive(_FSManager.DevMode);
+        
+    }
     
     private void OnEnable()
     {
@@ -19,17 +29,16 @@ public class GameCanvasManager : MonoBehaviour
         
     }
 
-    public void RevealWelcomeItems()
+    private void RevealWelcomeItems()
     {
         welcomeHolder.SetActive(true);
         Debug.Log("--GameCanvasManager RevealWelcomeItems");
-        //DOTween.To(() => welcomeItmes.transform.localScale, x => welcomeItmes.transform.localScale = x, new Vector3(1, 1, 1), 0.5f);
         
     }
 
     public void StartScrabble()
     {
-        //welcomeItmes.SetActive(false);
+        
         baseGame.SetActive(true);
         scrabbleManager.StartGame();
         
