@@ -10,6 +10,13 @@ namespace FSVR
         [SerializeField] private GameObject[] houseSymbols;
         [SerializeField] private GameObject[] houseTiles;
 
+        //private bool gameEnd = false;
+        //private bool gameStarted = false;
+        
+        //game status enum
+        private enum GameStatus { Waiting, Playing, Done}
+        private GameStatus gameStatus = GameStatus.Waiting;
+        
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -18,8 +25,14 @@ namespace FSVR
 
         public void StartGame()
         {
+            gameStatus = GameStatus.Playing;
             gameObject.SetActive(true);
             DisplayHouseSymbols();
+            
+        }
+
+        void CompareSequence()
+        {
             
         }
         
@@ -38,6 +51,7 @@ namespace FSVR
 
         void FinishGame()
         {
+            gameStatus = GameStatus.Done;
             DisplayHouse();
         }
         
