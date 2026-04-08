@@ -24,6 +24,7 @@ public class FSManager : MonoBehaviour
         if (devMode)
         {
             //
+            Debug.LogWarning("-- DEV Mode on!");
             
         }
     }
