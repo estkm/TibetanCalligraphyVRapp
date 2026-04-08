@@ -292,6 +292,8 @@ MonoBehaviour:
   - {fileID: 6814372604412412441}
   - {fileID: 1935754070582583744}
   - {fileID: 9165251858983103054}
+  slots: []
+  targetWord: CAT
 --- !u!1 &4581571196588768639
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,6 +605,7 @@ GameObject:
   - component: {fileID: 2690158751818927224}
   - component: {fileID: 4208061724365334604}
   - component: {fileID: 3292459560550573847}
+  - component: {fileID: 6362567577649973891}
   m_Layer: 0
   m_Name: Mesh0_n3d3
   m_TagString: Untagged
@@ -681,6 +684,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6362567577649973891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8417612295068094042}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.004521499, y: 0.020031456, z: 0.020019406}
+  m_Center: {x: 0, y: -0.000000029802322, z: 0}
 --- !u!1 &9138205686805985742
 GameObject:
   m_ObjectHideFlags: 0
