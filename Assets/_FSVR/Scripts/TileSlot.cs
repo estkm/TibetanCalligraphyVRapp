@@ -11,7 +11,7 @@ public class TileSlot : MonoBehaviour
 
     public bool TryPlaceTile(SymbolTile symbolTile)
     {
-        if (symbolTile == null) return false;
+        if (!symbolTile) return false;
         if (IsOccupied) return false;
 
         _currentSymbolTile = symbolTile;
@@ -26,7 +26,7 @@ public class TileSlot : MonoBehaviour
 
     public void RemoveTile()
     {
-        if (_currentSymbolTile == null) return;
+        if (!_currentSymbolTile) return;
 
         _currentSymbolTile.ClearCurrentSlot();
         _currentSymbolTile = null;
