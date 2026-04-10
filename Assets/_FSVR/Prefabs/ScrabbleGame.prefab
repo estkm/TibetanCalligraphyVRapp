@@ -49,7 +49,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668845330655696464}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 28863775277c14523a2adb65fc38b1ac, type: 2}
+  - {fileID: 2100000, guid: cf910db6c0b4e6249828b12b25b4df45, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -643,7 +643,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8417612295068094042}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -661,7 +661,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3a83f5f843a00498f9cc9403ca7b132f, type: 2}
+  - {fileID: 2100000, guid: cf910db6c0b4e6249828b12b25b4df45, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -762,6 +762,10 @@ PrefabInstance:
     - target: {fileID: 4037964013754010322, guid: 432b0b2cb1420466ab90e2341b85b9cc, type: 3}
       propertyPath: m_Name
       value: Letter_tiles KA KHA GA NGA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037964013754010322, guid: 432b0b2cb1420466ab90e2341b85b9cc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8282082602165565816, guid: 432b0b2cb1420466ab90e2341b85b9cc, type: 3}
       propertyPath: m_LocalPosition.x
