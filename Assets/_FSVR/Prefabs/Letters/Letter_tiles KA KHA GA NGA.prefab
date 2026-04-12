@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8350867212491016073}
   - component: {fileID: 1907785649759643509}
   - component: {fileID: 7349841487574497175}
+  - component: {fileID: 2615424040229311820}
   m_Layer: 0
   m_Name: KHA
   m_TagString: Untagged
@@ -202,6 +203,18 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &2615424040229311820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447060133331867971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44166d037a65b8348b41352e9bcf3e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReturnToStart
 --- !u!1 &2091866915009335366
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +338,7 @@ GameObject:
   - component: {fileID: 9109011804638868018}
   - component: {fileID: 6915828160496608272}
   - component: {fileID: 1483170921391080408}
+  - component: {fileID: 2910119460256381582}
   m_Layer: 0
   m_Name: NGA
   m_TagString: Untagged
@@ -515,6 +529,18 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &2910119460256381582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3869993133566259476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44166d037a65b8348b41352e9bcf3e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReturnToStart
 --- !u!1 &4037964013754010322
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,6 +811,7 @@ GameObject:
   - component: {fileID: 3051220659892151006}
   - component: {fileID: 1901874733138523528}
   - component: {fileID: 6802982103352224440}
+  - component: {fileID: 7121183321492679583}
   m_Layer: 0
   m_Name: GA
   m_TagString: Untagged
@@ -975,6 +1002,18 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &7121183321492679583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5789465641070148250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44166d037a65b8348b41352e9bcf3e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReturnToStart
 --- !u!1 &7358574780603721727
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,6 +1026,7 @@ GameObject:
   - component: {fileID: 2009442857238796307}
   - component: {fileID: 6244268367440758914}
   - component: {fileID: 7281190119717699403}
+  - component: {fileID: 4199947037750728883}
   m_Layer: 0
   m_Name: KA
   m_TagString: Untagged
@@ -1178,6 +1218,18 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &4199947037750728883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7358574780603721727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44166d037a65b8348b41352e9bcf3e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReturnToStart
 --- !u!1 &8426399131525264805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,8 +1408,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 694010772438725380, guid: 44145ebc0d95148debe55a827b4b7d02, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7162659030991151958}
   m_SourcePrefab: {fileID: 100100000, guid: 44145ebc0d95148debe55a827b4b7d02, type: 3}
+--- !u!1 &600772413786881544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 694010772438725380, guid: 44145ebc0d95148debe55a827b4b7d02, type: 3}
+  m_PrefabInstance: {fileID: 141793350551325964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7162659030991151958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600772413786881544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44166d037a65b8348b41352e9bcf3e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReturnToStart
 --- !u!4 &7004808964208677471 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6972087820508634963, guid: 44145ebc0d95148debe55a827b4b7d02, type: 3}
