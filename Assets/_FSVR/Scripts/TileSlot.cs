@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class TileSlot : MonoBehaviour
@@ -30,5 +31,10 @@ public class TileSlot : MonoBehaviour
 
         _currentSymbolTile.ClearCurrentSlot();
         _currentSymbolTile = null;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        throw new NotImplementedException();
     }
 }
