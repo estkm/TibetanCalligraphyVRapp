@@ -1,40 +1,59 @@
+using FSVR;
 using System;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
+[RequireComponent(typeof(XRSocketInteractor))]
 public class TileSlot : MonoBehaviour
 {
-    [SerializeField] private Transform snapPoint;
+	[SerializeField] private Transform snapPoint;
+	[SerializeField] private int slotIndex;
 
-    private SymbolTile _currentSymbolTile;
+	private XRSocketInteractor socket;
 
-    public SymbolTile currentSymbolTile => _currentSymbolTile;
-    public bool IsOccupied => _currentSymbolTile != null;
+	private SymbolTile _currentTile;
 
-    public bool TryPlaceTile(SymbolTile symbolTile)
-    {
-        if (!symbolTile) return false;
-        if (IsOccupied) return false;
+	public SymbolTile currentTile => _currentTile;
+	public int SlotIndex => slotIndex;
 
-        _currentSymbolTile = symbolTile;
-        _currentSymbolTile.SetCurrentSlot(this);
+	//public bool IsOccupied => _currentTile != null;
 
-        var target = snapPoint != null ? snapPoint : transform;
-        symbolTile.transform.position = target.position;
-        symbolTile.transform.rotation = target.rotation;
+	private void Awake ()
+	{
+		socket = GetComponent<XRSocketInteractor>();
+	}
 
-        return true;
-    }
+	private void OnEnable ()
+	{
+		socket.selectEntered.AddListener(OnSelectEntered);
+		socket.selectExited.AddListener(OnSelectExited);
+	}
 
-    public void RemoveTile()
-    {
-        if (!_currentSymbolTile) return;
+	private void OnDisable ()
+	{
+		socket.selectEntered.RemoveListener(OnSelectEntered);
+		socket.selectExited.RemoveListener(OnSelectExited);
+	}
 
-        _currentSymbolTile.ClearCurrentSlot();
-        _currentSymbolTile = null;
-    }
+	private void OnSelectEntered (SelectEnterEventArgs args)
+	{
+		_currentTile = args.interactableObject.transform.GetComponent<SymbolTile>();
+		print($"-- Tile {currentTile.Symbol} placed in slot {slotIndex}");
+		NotifyPuzzle();
+	}
 
-    private void OnTriggerEnter(Collider other)
-    {
-        throw new NotImplementedException();
-    }
+	private void OnSelectExited (SelectExitEventArgs args)
+	{
+		_currentTile = null;
+		NotifyPuzzle();
+	}
+
+	private void NotifyPuzzle ()
+	{
+		var puzzle = GetComponentInParent<ScrabbleManager>();
+		print($"-- Notifying puzzle of change in slot {slotIndex}");
+		if (puzzle != null)
+			puzzle.CheckWord();
+	}
 }
