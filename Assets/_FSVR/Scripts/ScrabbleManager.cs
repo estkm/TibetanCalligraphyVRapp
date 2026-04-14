@@ -34,13 +34,23 @@ namespace FSVR
 			house.SetActive(false);
 		}
 
+		private void HideHouseSymbols ()
+		{
+			foreach (var houseSymbol in houseSymbols)
+			{
+				houseSymbol.SetActive(false);
+			}
+		}
+
 		public void StartGame ()
 		{
 			gameStatus = GameStatus.Playing;
 			gameObject.SetActive(true);
+
 			boardManager.Show();
 			boardManager.HideLetters();
 
+			HideHouseSymbols();
 			DisplayHouseSymbols();
 		}
 
@@ -110,6 +120,8 @@ namespace FSVR
 			foreach (var houseSymbol in houseSymbols)
 			{
 				houseSymbol.SetActive(true);
+				//scale in
+				houseSymbol.transform.DOScale(houseSymbol.transform.localScale, 0.5f).From(0f).SetEase(Ease.OutBack);
 			}
 		}
 
