@@ -531,6 +531,7 @@ MonoBehaviour:
   slots:
   - {fileID: 682231026244395451}
   - {fileID: 871768476821860724}
+  boardManager: {fileID: 0}
 --- !u!1 &6591365450755029664
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,6 +850,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4197799118980965660, guid: 1179e00b7cf349a4cb352fd79f46996f, type: 3}
+      propertyPath: m_ShowInteractableHoverMeshes
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8037168851202328322, guid: 1179e00b7cf349a4cb352fd79f46996f, type: 3}
       propertyPath: m_Name
       value: SLOT
@@ -928,7 +933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8037168851202328322, guid: 1179e00b7cf349a4cb352fd79f46996f, type: 3}
       propertyPath: m_Name
-      value: SLOT (1)
+      value: SLOT
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
