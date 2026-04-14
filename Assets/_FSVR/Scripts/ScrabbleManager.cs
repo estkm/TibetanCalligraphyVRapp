@@ -15,6 +15,8 @@ namespace FSVR
 
 		[SerializeField] private TileSlot[] slots;
 
+		[SerializeField] private BoardManager boardManager;
+
 		private FSManager _fsManager;
 
 		//game status enum
@@ -36,6 +38,9 @@ namespace FSVR
 		{
 			gameStatus = GameStatus.Playing;
 			gameObject.SetActive(true);
+			boardManager.Show();
+			boardManager.HideLetters();
+
 			DisplayHouseSymbols();
 		}
 
