@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 349423148}
   m_Layer: 0
   m_Name: '___________________ '
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1869,7 +1869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 489830525}
   m_Layer: 0
-  m_Name: Lotus
+  m_Name: Lotus Rain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4875,6 +4875,37 @@ MonoBehaviour:
   activeColor: {r: 0, g: 1, b: 0, a: 1}
   doubleTapActiveColor: {r: 0, g: 1, b: 1, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1959271813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1959271814}
+  m_Layer: 0
+  m_Name: ___ Managers ___
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1959271814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959271813}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.016917288, y: 1.2262119, z: 2.218815}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2062077859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5748,6 +5779,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 561693931}
     m_Modifications:
+    - target: {fileID: 3389110911199090007, guid: c8f60523785f34b6797683793799b054, type: 3}
+      propertyPath: lotusRain
+      value: 
+      objectReference: {fileID: 489830524}
     - target: {fileID: 3389110911199090007, guid: c8f60523785f34b6797683793799b054, type: 3}
       propertyPath: boardManager
       value: 
@@ -13512,7 +13547,9 @@ GameObject:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1959271814}
   - {fileID: 1226975453}
+  - {fileID: 219509132}
   - {fileID: 1717954560120711358}
   - {fileID: 349423148}
   - {fileID: 1619688660}
@@ -13523,7 +13560,6 @@ SceneRoots:
   - {fileID: 941225389}
   - {fileID: 2092229250}
   - {fileID: 357241006}
-  - {fileID: 219509132}
   - {fileID: 489830525}
   - {fileID: 17635241}
   - {fileID: 149184246}
