@@ -17,6 +17,8 @@ namespace FSVR
 
 		[SerializeField] private BoardManager boardManager;
 
+		[SerializeField] private GameObject lotusRain;
+
 		private FSManager _fsManager;
 
 		//game status enum
@@ -49,6 +51,8 @@ namespace FSVR
 
 			boardManager.Show();
 			boardManager.HideLetters();
+
+			lotusRain.SetActive(false);
 
 			HideHouseSymbols();
 			DisplayHouseSymbols();
