@@ -52,7 +52,7 @@ public class TileSlot : MonoBehaviour
 	private void NotifyPuzzle ()
 	{
 		var puzzle = GetComponentInParent<ScrabbleManager>();
-		print($"-- Notifying puzzle of change in slot {slotIndex}");
+		//print($"-- Notifying puzzle of change in slot {slotIndex}");
 		if (puzzle != null)
 			puzzle.CheckWord();
 	}
