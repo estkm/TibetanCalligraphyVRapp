@@ -24,7 +24,7 @@ namespace FSVR
 			}
 
 			Instance = this;
-			DontDestroyOnLoad(gameObject);
+			//DontDestroyOnLoad(gameObject);
 
 			if (devMode)
 			{
