@@ -3278,6 +3278,7 @@ MonoBehaviour:
   gameCanvasManager: {fileID: 3462316574064796115}
   boardManager: {fileID: 89918319}
   scabbleManager: {fileID: 795626725223730788}
+  MXInk: {fileID: 1949258774}
 --- !u!1 &1234812432
 GameObject:
   m_ObjectHideFlags: 0

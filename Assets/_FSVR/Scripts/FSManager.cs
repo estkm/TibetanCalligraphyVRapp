@@ -5,14 +5,20 @@ public class FSManager : MonoBehaviour
 {
 	public static FSManager Instance { get; private set; }
 
+	[Header("Settings")]
 	[SerializeField] private bool devMode = true;
+
 	public bool DevMode => devMode;
 
+	[Header("References")]
 	[SerializeField] private GameObject baseGame;
 
 	[SerializeField] private GameCanvasManager gameCanvasManager;
 	[SerializeField] private BoardManager boardManager;
 	[SerializeField] private ScrabbleManager scabbleManager;
+
+	[Header("MX Ink")]
+	[SerializeField] private MXInkStylusHandler MXInk;
 
 	private void Awake ()
 	{
