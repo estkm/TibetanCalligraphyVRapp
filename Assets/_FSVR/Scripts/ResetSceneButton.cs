@@ -1,3 +1,4 @@
+using FSVR;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,8 +6,9 @@ using UnityEngine.SceneManagement;
 // Wire the Button OnClick -> this component -> ReloadScene()
 public class ResetSceneButton : MonoBehaviour
 {
-    public void ReloadScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+	public void ReloadScene ()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		FSManager.Instance.ResetScene();
+	}
 }
