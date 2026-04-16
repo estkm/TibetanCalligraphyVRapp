@@ -44,4 +44,9 @@ public class BoardManager : MonoBehaviour
 	{
 		ResetBoard();
 	}
+
+	internal void ShowHouseLetters ()
+	{
+		homeLetters.SetActive(true);
+	}
 }
