@@ -8,12 +8,14 @@ namespace FSVR
 	public class ScrabbleManager : MonoBehaviour
 	{
 		[SerializeField] private string targetWord = "KHANGA";
+		[SerializeField] private TileSlot[] slots;
 
+		[Header("House assets")]
 		[SerializeField] private GameObject house;
+
 		[SerializeField] private GameObject[] houseSymbols;
 		[SerializeField] private GameObject[] houseTiles;
-
-		[SerializeField] private TileSlot[] slots;
+		[SerializeField] private GameObject houseDrawController;
 
 		[SerializeField] private BoardManager boardManager;
 
@@ -50,7 +52,7 @@ namespace FSVR
 			gameObject.SetActive(true);
 
 			boardManager.Show();
-			boardManager.HideLetters();
+			boardManager.InitHome();
 
 			lotusRain.SetActive(false);
 
@@ -129,7 +131,7 @@ namespace FSVR
 			}
 		}
 
-		private void DisplayHouse ()
+		public void DisplayHouseModel ()
 		{
 			house.SetActive(true);
 			house.transform.DOScale(house.transform.localScale, 1f).From(0f).SetEase(Ease.InOutExpo);
@@ -141,7 +143,14 @@ namespace FSVR
 			gameStatus = GameStatus.Done;
 			//hide tiles and slots
 			HideTiles();
-			DisplayHouse();
+			boardManager.ShowHouseLetters();
+			houseDrawController.SetActive(true);
+		}
+
+		public void CompeleteWritingHouse ()
+		{
+			lotusRain.SetActive(true);
+			DisplayHouseModel();
 		}
 
 		private void HideTiles ()

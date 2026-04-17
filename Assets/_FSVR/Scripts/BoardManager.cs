@@ -11,6 +11,8 @@ public class BoardManager : MonoBehaviour
 	[Header("Home Letters")]
 	[SerializeField] private GameObject homeLetters;
 
+	[SerializeField] private GameObject stamp;
+
 	private void Awake ()
 	{
 		homeLetters.SetActive(false);
@@ -18,21 +20,22 @@ public class BoardManager : MonoBehaviour
 
 	private void ResetBoard ()
 	{
-		//letterKA.SetActive(false);
-		letterKA.HideAllStrokes();
-		//letterGA.SetActive(false);
-		letterGA.HideAllStrokes();
-		//letterKHA.SetActive(false);
-		letterKHA.HideAllStrokes();
-		//letterNGA.SetActive(false);
-		letterNGA.HideAllStrokes();
+		letterKA.gameObject.SetActive(false);
+		//letterKA.HideAllStrokes();
+		letterGA.gameObject.SetActive(false);
+		//letterGA.HideAllStrokes();
+		letterKHA.gameObject.SetActive(false);
+		//letterKHA.HideAllStrokes();
+		letterNGA.gameObject.SetActive(false);
+		//letterNGA.HideAllStrokes();
+
+		homeLetters.SetActive(false);
+		stamp.SetActive(false);
 	}
 
 	public void InitHome ()
 	{
 		ResetBoard();
-		//letterKHA.SetActive(true);
-		//letterNGA.SetActive(true);
 	}
 
 	internal void Show ()
@@ -43,5 +46,10 @@ public class BoardManager : MonoBehaviour
 	internal void HideLetters ()
 	{
 		ResetBoard();
+	}
+
+	internal void ShowHouseLetters ()
+	{
+		homeLetters.SetActive(true);
 	}
 }
