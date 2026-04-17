@@ -9181,10 +9181,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3339608300399259029, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.12
-      objectReference: {fileID: 0}
     - target: {fileID: 3382601311158702587, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
       propertyPath: baseGame
       value: 
