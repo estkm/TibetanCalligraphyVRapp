@@ -521,6 +521,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   targetWord: KHANGA
+  slots:
+  - {fileID: 682231026244395451}
+  - {fileID: 871768476821860724}
   house: {fileID: 1322907123392686051}
   houseSymbols: []
   houseTiles:
@@ -528,10 +531,9 @@ MonoBehaviour:
   - {fileID: 6814372604412412441}
   - {fileID: 1935754070582583744}
   - {fileID: 9165251858983103054}
-  slots:
-  - {fileID: 682231026244395451}
-  - {fileID: 871768476821860724}
+  houseDrawController: {fileID: 0}
   boardManager: {fileID: 0}
+  lotusRain: {fileID: 0}
 --- !u!1 &6591365450755029664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1058,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4786855040408368253, guid: 2d1eb7867c14c496caa9d6ececec17fa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270763940096536263, guid: 2d1eb7867c14c496caa9d6ececec17fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270763940096536263, guid: 2d1eb7867c14c496caa9d6ececec17fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270763940096536263, guid: 2d1eb7867c14c496caa9d6ececec17fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 5270763940096536263, guid: 2d1eb7867c14c496caa9d6ececec17fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1068,7 +1082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5270763940096536263, guid: 2d1eb7867c14c496caa9d6ececec17fa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 5270763940096536263, guid: 2d1eb7867c14c496caa9d6ececec17fa, type: 3}
       propertyPath: m_LocalRotation.w
