@@ -524,6 +524,7 @@ MonoBehaviour:
   letterGA: {fileID: 3475254506671260523}
   letterNGA: {fileID: 522060300911477604}
   homeLetters: {fileID: 804943241304485817}
+  stamp: {fileID: 5798660690107913940}
 --- !u!1 &1768331662366025801
 GameObject:
   m_ObjectHideFlags: 0
