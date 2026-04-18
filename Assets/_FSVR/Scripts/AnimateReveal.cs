@@ -6,11 +6,15 @@ public class AnimateReveal : MonoBehaviour
 	[SerializeField]
 	private float revealDuration = 0.7f;
 
+	[SerializeField] 
+	private float delay = 0;
+	
 	[SerializeField]
 	private Ease easeOption = Ease.OutExpo;
 
 	private void OnEnable ()
 	{
-		transform.DOScale(transform.localScale, revealDuration).From(0f).SetEase(easeOption);
+		transform.DOScale(transform.localScale, revealDuration).From(0f).SetEase(easeOption).SetDelay(delay);
+		
 	}
 }
