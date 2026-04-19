@@ -1849,6 +1849,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6332283737251999896
 GameObject:
@@ -3146,7 +3147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2476696814659315818, guid: b22cd0c3ad975b64d81664729756b32c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3180013152041023770, guid: b22cd0c3ad975b64d81664729756b32c, type: 3}
       propertyPath: pathPoints.Array.size
@@ -3348,7 +3349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2476696814659315818, guid: 9574be715201c244d9417ca1baa287da, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3180013152041023770, guid: 9574be715201c244d9417ca1baa287da, type: 3}
       propertyPath: pathPoints.Array.size
@@ -3550,7 +3551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2476696814659315818, guid: 92da112de79c86a45a70c0af4064369f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5729534932274131132, guid: 92da112de79c86a45a70c0af4064369f, type: 3}
       propertyPath: pathPoints.Array.size
@@ -3803,7 +3804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2476696814659315818, guid: c89f2191fee7f3642937ecba605baa08, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2721803458760422337, guid: c89f2191fee7f3642937ecba605baa08, type: 3}
       propertyPath: m_IsActive
