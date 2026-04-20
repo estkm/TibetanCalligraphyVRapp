@@ -1590,7 +1590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf64e9d163794a7eb28dae76838c106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FSManager
-  devMode: 1
+  devMode: 0
   baseGame: {fileID: 561693930}
   gameCanvasManager: {fileID: 3462316574064796115}
   boardManager: {fileID: 89918319}
