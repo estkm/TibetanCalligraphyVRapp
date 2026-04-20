@@ -429,7 +429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimateReveal
   revealDuration: 1
   delay: 1
-  easeOption: 0
+  easeOption: 3
 --- !u!1 &4695605501754710294
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,6 +662,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -786,6 +787,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1400631086668214006
 MonoBehaviour:
@@ -801,7 +803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimateReveal
   revealDuration: 1
   delay: 3
-  easeOption: 0
+  easeOption: 3
 --- !u!1 &6741108919738855608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1226,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1348,6 +1351,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &593409690883403335
 MonoBehaviour:
@@ -1363,7 +1367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimateReveal
   revealDuration: 1
   delay: 2
-  easeOption: 0
+  easeOption: 3
 --- !u!1 &8662442962139199211
 GameObject:
   m_ObjectHideFlags: 0

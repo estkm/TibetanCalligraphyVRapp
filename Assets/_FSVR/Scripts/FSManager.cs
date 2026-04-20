@@ -31,14 +31,11 @@ namespace FSVR
 				//
 				Debug.LogWarning("-- DEV Mode on!");
 			}
-
-			//baseGame.SetActive(false);
 		}
 
 		public void ResetScene ()
 		{
 			print("-- ResetScene");
-			//baseGame.SetActive(false);
 		}
 	}
 }
