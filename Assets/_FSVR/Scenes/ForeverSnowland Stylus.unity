@@ -1591,6 +1591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FSManager
   devMode: 0
+  stylusMode: 1
   baseGame: {fileID: 561693930}
   gameCanvasManager: {fileID: 3462316574064796115}
   boardManager: {fileID: 89918319}

@@ -134,6 +134,9 @@ namespace FSVR
 		public void DisplayHouseModel ()
 		{
 			house.SetActive(true);
+
+			if (FSManager.Instance.StylusMode) return;
+
 			house.transform.DOScale(house.transform.localScale, 1f).From(0f).SetEase(Ease.InOutExpo);
 			house.transform.DORotateQuaternion(Quaternion.Euler(0f, 360f, 0f), 1f).From().SetEase(Ease.InOutExpo);
 		}
