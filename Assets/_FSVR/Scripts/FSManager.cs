@@ -7,7 +7,9 @@ namespace FSVR
 		public static FSManager Instance { get; private set; }
 
 		[SerializeField] private bool devMode = true;
+		[SerializeField] private bool stylusMode = false;
 		public bool DevMode => devMode;
+		public bool StylusMode => stylusMode;
 
 		[SerializeField] private GameObject baseGame;
 
