@@ -1184,7 +1184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68c778cf75edd6439827b4c58d5dd16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RaycastLineDrawerTrigger
-  drawingPointer: {fileID: 1606563288}
+  drawingPointer: {fileID: 8961125624297232918}
   rayDistance: 0.042
   drawLayerMask:
     serializedVersion: 2
@@ -2013,7 +2013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68c778cf75edd6439827b4c58d5dd16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RaycastLineDrawerTrigger
-  drawingPointer: {fileID: 1606563288}
+  drawingPointer: {fileID: 8961125624297232918}
   rayDistance: 0.042
   drawLayerMask:
     serializedVersion: 2
@@ -2036,11 +2036,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1606563288 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4318011992925953836, guid: 3668f13f06c264640aa223929ab8ea65, type: 3}
-  m_PrefabInstance: {fileID: 8961125624297232917}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1619688658
 GameObject:
   m_ObjectHideFlags: 0
@@ -3677,6 +3672,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3668f13f06c264640aa223929ab8ea65, type: 3}
+--- !u!4 &8961125624297232918 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6664532030180037956, guid: 3668f13f06c264640aa223929ab8ea65, type: 3}
+  m_PrefabInstance: {fileID: 8961125624297232917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
