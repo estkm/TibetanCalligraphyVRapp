@@ -1591,6 +1591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FSManager
   devMode: 0
+  stylusMode: 0
   baseGame: {fileID: 561693930}
   gameCanvasManager: {fileID: 3462316574064796115}
   boardManager: {fileID: 89918319}
@@ -3058,6 +3059,34 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 119386599}
+    - target: {fileID: 1922894161570371558, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922894161570371558, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922894161570371558, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1226975454}
+    - target: {fileID: 1922894161570371558, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922894161570371558, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleMR
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922894161570371558, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FSVR.FSManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922894161570371558, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2130406580466871235, guid: 3b2c885e28bf4304facf6b6150949228, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 5
