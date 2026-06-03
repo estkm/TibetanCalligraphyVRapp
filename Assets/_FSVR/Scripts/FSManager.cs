@@ -39,5 +39,10 @@ namespace FSVR
 		{
 			print("-- ResetScene");
 		}
+
+		public void ToggleMR ()
+		{
+			print("-- ToggleMR");
+		}
 	}
 }
