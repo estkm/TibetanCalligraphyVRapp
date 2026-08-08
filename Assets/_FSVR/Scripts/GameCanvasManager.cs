@@ -22,17 +22,6 @@ public class GameCanvasManager : MonoBehaviour
 		scrabbleButton.SetActive(_FSManager.DevMode);
 	}
 
-	private void OnEnable ()
-	{
-		RevealWelcomeItems();
-	}
-
-	private void RevealWelcomeItems ()
-	{
-		welcomeHolder.SetActive(true);
-		Debug.Log("--GameCanvasManager RevealWelcomeItems");
-	}
-
 	public void StartScrabble ()
 	{
 		baseGame.SetActive(true);

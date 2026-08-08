@@ -84,11 +84,21 @@ crashlytics-build.properties
 # Ignore crash reports
 sysinfo.txt
 
+# Meta Immersive Debugger local token, AR Foundation Editor Simulation prefs,
+# and stray build artifacts - regenerate locally, never needed in source control
+Assets/Resources/DevAgentSettings.asset*
+Assets/CompositionLayers/
+Assets/XR/UserSimulationSettings/
+Assets/XR/Loaders/SimulationLoader.asset*
+Assets/XR/Resources/XRSimulationRuntimeSettings.asset*
+TempAssembly.dll
+
 # Rider specific
 .idea/
 
 # VS Code
 .vscode/
+.claude/
 
 # Local config
 *.swp

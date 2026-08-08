@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.all": "201.0.0",
+    "com.meta.xr.sdk.all": "205.0.0",
     "com.unity.collab-proxy": "2.12.4",
     "com.unity.feature.development": "1.0.2",
     "com.unity.ide.rider": "3.0.39",
@@ -10,9 +10,11 @@
     "com.unity.render-pipelines.universal": "17.3.0",
     "com.unity.timeline": "1.8.12",
     "com.unity.visualeffectgraph": "17.3.0",
+    "com.unity.xr.arfoundation": "6.6.1",
     "com.unity.xr.hands": "1.7.3",
     "com.unity.xr.interaction.toolkit": "3.3.1",
     "com.unity.xr.management": "4.5.4",
+    "com.unity.xr.meta-openxr": "2.5.1",
     "com.unity.xr.openxr": "1.16.1",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.adaptiveperformance": "1.0.0",

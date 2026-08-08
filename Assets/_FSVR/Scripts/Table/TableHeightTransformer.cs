@@ -26,7 +26,7 @@ public class TableHeightControl : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         Vector3 pos = transform.position;
 
