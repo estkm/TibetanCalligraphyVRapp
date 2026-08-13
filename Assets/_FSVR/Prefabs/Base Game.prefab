@@ -782,6 +782,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5558014353343903006}
     m_Modifications:
+    - target: {fileID: 772714867315291015, guid: c8f60523785f34b6797683793799b054, type: 3}
+      propertyPath: m_ParentInteractableObject
+      value: 
+      objectReference: {fileID: 193576367865549979}
+    - target: {fileID: 1141624420178600776, guid: c8f60523785f34b6797683793799b054, type: 3}
+      propertyPath: m_ParentInteractableObject
+      value: 
+      objectReference: {fileID: 193576367865549979}
     - target: {fileID: 4164855883178942200, guid: c8f60523785f34b6797683793799b054, type: 3}
       propertyPath: m_Name
       value: ScrabbleGame
@@ -912,6 +920,17 @@ PrefabInstance:
       addedObject: {fileID: 1066460660754211967}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d54fcfa29d9fb54d8573efda0792ee8, type: 3}
+--- !u!114 &193576367865549979 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5896548449020513802, guid: 7d54fcfa29d9fb54d8573efda0792ee8, type: 3}
+  m_PrefabInstance: {fileID: 6015409685509102225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
 --- !u!4 &5558014353343903006 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2186796307096743823, guid: 7d54fcfa29d9fb54d8573efda0792ee8, type: 3}
