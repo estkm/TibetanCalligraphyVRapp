@@ -782,6 +782,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5558014353343903006}
     m_Modifications:
+    - target: {fileID: 772714867315291015, guid: c8f60523785f34b6797683793799b054, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141624420178600776, guid: c8f60523785f34b6797683793799b054, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141624420178600776, guid: c8f60523785f34b6797683793799b054, type: 3}
+      propertyPath: m_ParentInteractableObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755998673259638324, guid: c8f60523785f34b6797683793799b054, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4164855883178942200, guid: c8f60523785f34b6797683793799b054, type: 3}
       propertyPath: m_Name
       value: ScrabbleGame
@@ -900,9 +916,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5896548449020513802, guid: 7d54fcfa29d9fb54d8573efda0792ee8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219609652282372966, guid: 7d54fcfa29d9fb54d8573efda0792ee8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489078463435947065, guid: 7d54fcfa29d9fb54d8573efda0792ee8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619319082451589716, guid: 7d54fcfa29d9fb54d8573efda0792ee8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8192920443166762885, guid: 7d54fcfa29d9fb54d8573efda0792ee8, type: 3}
       propertyPath: m_Name
       value: Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192920443166762885, guid: 7d54fcfa29d9fb54d8573efda0792ee8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951849941516408319, guid: 7d54fcfa29d9fb54d8573efda0792ee8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
