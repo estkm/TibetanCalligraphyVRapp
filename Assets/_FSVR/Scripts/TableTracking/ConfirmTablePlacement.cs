@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.ARFoundation;
 
 // Hooked to the AR scene's Play button. Saves exactly where the player left
 // the placeholder table (after grabbing/adjusting it) and hands that
@@ -28,6 +29,22 @@ public class ConfirmTablePlacement : MonoBehaviour
         // moment between pressing Play and the scene actually unloading.
         placedTable.gameObject.SetActive(false);
 
+        ShutDownARSession();
+
         SceneManager.LoadScene(vrSceneName);
+    }
+
+    // Tears AR down here rather than letting the scene unload do it. ARInputManager
+    // (on the AR Session object) stops the XRInputSubsystem in OnDisable, so this
+    // brings that stop forward to a point where it can be undone in the same frame -
+    // the VR scene then opens with live tracking instead of a frozen camera.
+    private void ShutDownARSession()
+    {
+        ARSession session = FindAnyObjectByType<ARSession>();
+
+        if (session != null)
+            session.gameObject.SetActive(false);
+
+        XRInputSubsystemGuard.RestoreNow();
     }
 }
